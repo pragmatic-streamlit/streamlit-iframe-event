@@ -1,2 +1,2 @@
 build:
-	cd streamlit_template/frontend && npm run build
+	cd streamlit_iframe_event/frontend && npm run build

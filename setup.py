@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='streamlit-template',
-    version='0.0.1',
+    name='streamlit-iframe-event',
+    version='0.0.5',
     packages=find_packages(),
     include_package_data=True,
     install_requires=['streamlit'],
-    url='https://github.com/pragmatic-streamlit/streamlit-phone-number',
+    url='https://github.com/pragmatic-streamlit/streamlit-iframe-event',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     classifiers=[
