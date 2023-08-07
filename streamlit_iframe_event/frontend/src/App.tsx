@@ -9,6 +9,7 @@ export enum StreamlitEventType {
 
 export interface StreamlitEvent {
   type: StreamlitEventType;
+  token?: string
 }
 
 export const noticeStreamlit = (event: StreamlitEvent) =>
@@ -57,7 +58,8 @@ class CustomStreamlitComponent extends StreamlitComponentBase<IState> {
         if (event.data.code === 0) {
           console.log("login success", event.data)
           noticeStreamlit({
-            type: StreamlitEventType.LOGIN_SUCCESS
+            type: StreamlitEventType.LOGIN_SUCCESS,
+            token: event.data.token
           })
         } else {
           console.log("login failed", event.data)
