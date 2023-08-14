@@ -79,7 +79,9 @@ class CustomStreamlitComponent extends StreamlitComponentBase<IState> {
   public render(): React.ReactNode {
     const { args } = this.props
     return (
-        <IframeResizer log heightCalculationMethod="lowestElement" src={args["url"]} title="InnerSSO" frameBorder="0" onResized={this.forceResize} sizeWidth={true} checkOrigin={false}/>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }}>
+        <IframeResizer log heightCalculationMethod="lowestElement" src={args["url"]} title="InnerSSO" frameBorder="0" sizeWidth={true} checkOrigin={false}/>
+      </div>
     )
   }
 }
