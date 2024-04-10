@@ -80,7 +80,7 @@ class CustomStreamlitComponent extends StreamlitComponentBase<IState> {
     const { args } = this.props
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }}>
-        <IframeResizer log heightCalculationMethod="lowestElement" src={args["url"]} title="InnerSSO" frameBorder="0" sizeWidth={true} checkOrigin={false}/>
+        <IframeResizer log heightCalculationMethod="lowestElement" src={args["url"]} title="InnerSSO" frameBorder="0" sizeWidth={true} width={args["default_width"]}  checkOrigin={false}/>
       </div>
     )
   }
