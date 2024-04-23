@@ -25,5 +25,5 @@ def st_iframe_event(url, key=None, default_width="100%"):
 
 if _DEVELOP_MODE:
     import streamlit as st
-    event = st_iframe_event("https://platform.test.dp.tech/login?business=Bohrium&lang=en-us", key="test", default_width="400px")
+    event = st_iframe_event("https://example.com", key="test", default_width="400px")
     st.write(event)
