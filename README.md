@@ -1,21 +1,15 @@
-# streamlit-iframe-event
+# Streamlit Iframe Event
 
-```bash
-cd streamlit_iframe_event/frontend
+streamlit-iframe-event converts window messages in iframes into component return values.
+
+## Install
+```
+pip install streamlit-iframe-event
 ```
 
-```bash
-npm install
+## Usage
 ```
-
-```bash
-npm run start
-```
-
-```bash
-cd streamlit_iframe_event
-```
-
-```bash
-streamlit run __init__.py
+ import streamlit as st
+event = st_iframe_event("https://example.com", key="test", default_width="400px")
+st.write(event)
 ```
